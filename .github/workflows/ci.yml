@@ -1,0 +1,11 @@
+name: ci
+on: [pull_request]
+jobs:
+  slow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 90
+  slow-optional:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 150
